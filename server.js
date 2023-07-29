@@ -1,0 +1,43 @@
+const express = require("express");
+const cors = require("cors");
+const morgan = require("morgan");
+const colors = require("colors");
+const dotenv = require("dotenv");
+const connectDB = require("./config/db");
+const path = require("path");
+
+//env config
+dotenv.config();
+
+//router import
+const userRoutes = require("./routes/userRoutes");
+const blogRoutes = require("./routes/blogRoutes");
+
+//mongodb connection
+connectDB();
+
+//rest objecct
+const app = express();
+
+//middelwares
+app.use(cors());
+app.use(express.json());
+app.use(morgan("dev"));
+
+//routes
+app.use("/api/user", userRoutes);
+app.use("/api/blog", blogRoutes);
+
+// static folder
+app.use(express.static(path.join(__dirname, "./client/build")));
+
+// static routes
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
+//listen
+const PORT = process.env.PORT || 8081;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`.bgCyan.white);
+});
