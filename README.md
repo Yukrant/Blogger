@@ -1,4 +1,11 @@
-Screenshots : - https://drive.google.com/drive/folders/1Yfo9f2AhoXnj3ChiRbPEkv5Tf0g-Mqjx?usp=drive_link
+# Screenshots
+
+<img width="960" alt="Screenshot 2023-07-29 161338" src="https://github.com/Yukrant/Blogger/assets/95124079/b8f5e86c-d246-4389-8d1c-a8f8284f3931">
+
+<img width="959" alt="Screenshot 2023-07-29 161650" src="https://github.com/Yukrant/Blogger/assets/95124079/f74d4b01-b073-4548-9ea8-177cb6a70c36">
+
+<img width="960" alt="Screenshot 2023-07-29 161722" src="https://github.com/Yukrant/Blogger/assets/95124079/a2af09d1-0a03-4c4b-b8b8-9286034d831f">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
